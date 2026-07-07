@@ -1,0 +1,542 @@
+:root {
+    --paper:#EEE7D6;
+    --paper-2:#E6DCC6;
+    --ink:#211C15;
+    --ink-soft:#4A4238;
+    --stamp:#A23B2E;
+    --stamp-dark:#7E2E23;
+    --via-white:#F6F2E6;
+    --via-yellow:#D9A441;
+    --via-green:#5C7A5E;
+    --via-pink:#C77B8E;
+    --line:rgba(33,28,21,0.18);
+    --radius:2px;
+}
+* {
+    box-sizing:border-box;
+}
+html {
+    scroll-behavior:smooth;
+}
+body {
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans Variable', sans-serif;
+    font-size:16px;
+    line-height:1.55;
+}
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration:0.001ms !important; 
+        transition-duration:0.001ms !important;
+    }
+}
+h1,h2,h3 {
+    font-family:'Roboto Slab Variable', serif;
+    margin:0;
+    color:var(--ink);
+}
+.mono { 
+    font-family:'IBM Plex Mono', monospace;
+}
+.wrap {
+    max-width:1080px;
+    margin:0 auto;
+    padding:0 32px;
+}
+
+/* ---------- TOPBAR ---------- */
+.topbar {
+    border-bottom:1px solid var(--line);
+    padding:18px 0;
+    position:sticky;
+    top:0;
+    background:rgba(238,231,214,0.92);
+    backdrop-filter:blur(6px);
+    z-index:50;
+}
+.topbar .wrap {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.brand {
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+}
+.brand .mark {
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:.12em;
+    background:var(--stamp);
+    color:var(--via-white);
+    padding:3px 7px;
+    border-radius:var(--radius);
+}
+.brand .name {
+    font-family:'Roboto Slab Variable', serif;
+    font-weight:700;
+    font-size:19px;
+}
+nav {
+    display:flex; 
+    gap:28px;
+}
+nav a {
+    color:var(--ink-soft);
+    text-decoration:none;
+    font-size:14px;
+    font-weight:500;
+    border-bottom:1px solid transparent;
+    transition:border-color .15s ease, color .15s ease;
+}
+nav a:hover, nav a:focus-visible {
+    color:var(--stamp); 
+    border-color:var(--stamp);
+}
+
+/* ---------- HERO ---------- */
+.hero {
+    padding:88px 0 60px;
+    position:relative;
+    overflow:hidden;
+}
+.hero .wrap {
+    display:grid;
+    grid-template-columns:1.05fr 0.95fr;
+    gap:56px;
+    align-items:center;
+}
+.eyebrow {
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--stamp-dark);
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:18px;
+}
+.eyebrow::before {
+    content:"";
+    width:22px; height:1px;
+    background:var(--stamp-dark);
+    display:inline-block;
+}
+.hero h1 {
+    font-size:52px;
+    line-height:1.03;
+    letter-spacing:-0.01em;
+}
+.hero h1 em {
+    font-style:normal;
+    color:var(--stamp);
+}
+.hero p.lead {
+    margin-top:22px;
+    font-size:17.5px;
+    color:var(--ink-soft);
+    max-width:46ch;
+}
+.hero .cta-row {
+    margin-top:32px;
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+}
+.btn {
+    font-family:'IBM Plex Sans Variable', sans-serif;
+    font-weight:600;
+    font-size:14.5px;
+    padding:13px 22px;
+    border-radius:var(--radius);
+    border:1px solid var(--ink);
+    text-decoration:none;
+    display:inline-block;
+    cursor:pointer;
+    transition:transform .15s ease, background .15s ease, color .15s ease;
+}
+.btn.primary {
+    background:var(--ink);
+    color:var(--paper);
+}
+.btn.primary:hover {
+    background:var(--stamp); 
+    border-color:var(--stamp); 
+    transform:translateY(-1px);
+}
+.btn.ghost {
+    background:transparent;
+    color:var(--ink);
+}
+.btn.ghost:hover {
+    background:var(--ink); 
+    color:var(--paper); 
+    transform:translateY(-1px);
+}
+
+/* ---------- VIAS SIGNATURE STACK ---------- */
+.vias {
+    position:relative;
+    height:340px;
+    perspective:900px;
+}
+.via-card {
+    position:absolute;
+    width:280px;
+    height:190px;
+    top:50%; left:50%;
+    border-radius:var(--radius);
+    border:1px solid rgba(33,28,21,0.25);
+    box-shadow:0 8px 22px rgba(33,28,21,0.14);
+    padding:18px 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    transition:transform .5s cubic-bezier(.2,.7,.3,1), box-shadow .3s ease;
+}
+.via-card .tag {
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10.5px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    opacity:.72;
+}
+.via-card .who {
+    font-family:'Roboto Slab Variable', serif;
+    font-weight:600;
+    font-size:17px;
+}
+.via-card .num {
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    opacity:.6;
+}
+.via-card.c1 {
+    background:var(--via-white); 
+    color:var(--ink); 
+    transform:translate(-84%,-72%) rotate(-7deg);
+}
+.via-card.c2 {
+    background:var(--via-yellow); 
+    color:var(--ink); 
+    transform:translate(-58%,-52%) rotate(-2deg);
+}
+.via-card.c3 {
+    background:var(--via-green); 
+    color:var(--via-white); 
+    transform:translate(-32%,-32%) rotate(3deg);
+}
+.via-card.c4 {
+    background:var(--via-pink); 
+    color:var(--ink); 
+    transform:translate(-8%,-16%) rotate(8deg);
+}
+.vias:hover .via-card.c1 {
+    transform:translate(-96%,-90%) rotate(-11deg);
+}
+.vias:hover .via-card.c2 {
+    transform:translate(-60%,-58%) rotate(-4deg);
+}
+.vias:hover .via-card.c3 {
+    transform:translate(-24%,-24%) rotate(5deg);
+}
+.vias:hover .via-card.c4 {
+    transform:translate(6%,4%) rotate(11deg);
+}
+.via-card.c4 {
+    z-index:4;
+} 
+.via-card.c3 {
+    z-index:3;
+} 
+.via-card.c2 {
+    z-index:2;
+} 
+.via-card.c1 {
+    z-index:1;
+}
+
+/* ---------- SECTION SCAFFOLDING ---------- */
+section {
+    padding:64px 0;
+}
+.section-head {
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    gap:24px;
+    margin-bottom:38px;
+    border-bottom:1px solid var(--line);
+    padding-bottom:18px;
+}
+.section-head-fluxo {
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    gap:24px;
+    font-size:20px;
+    margin-bottom:20px;
+    padding-bottom:18px;
+}
+.section-head h2 {
+    font-size:28px;
+}
+.section-head .idx {
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    color:var(--ink-soft);
+}
+
+/* ---------- O QUE É ---------- */
+.definition {
+    display:grid;
+    grid-template-columns:1.3fr 1fr;
+    gap:48px;
+}
+.definition p {
+    color:var(--ink-soft); 
+    font-size:15.5px;
+}
+.definition .callout {
+    background:var(--via-white);
+    border:1px solid var(--line);
+    border-left:4px solid var(--stamp);
+    padding:20px 22px;
+    border-radius:var(--radius);
+    font-size:14px;
+    color:var(--ink-soft);
+}
+.definition .callout strong {
+    color:var(--ink);
+}
+
+/* ---------- QUEM PRECISA (grid) ---------- */
+.roles {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+.role-card {
+    background:var(--paper-2);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:24px 22px;
+    position:relative;
+}
+.role-card .swatch {
+    width:34px; height:6px;
+    border-radius:2px;
+    margin-bottom:16px;
+}
+.role-card.gerador .swatch {
+    background:var(--via-white); 
+    border:1px solid var(--line);
+}
+.role-card.transportador .swatch {
+    background:var(--via-yellow);
+}
+.role-card.destinador .swatch {
+    background:var(--via-green);
+}
+.role-card.armazedor .swatch {
+    background:var(--via-pink);
+}
+.role-card h3 {
+    font-size:17px; 
+    margin-bottom:8px;
+}
+.role-card p {
+    font-size:14px; 
+    color:var(--ink-soft);
+    margin:0;
+}
+
+/* ---------- FLUXO (etapas reais e sequenciais) ---------- */
+.flow {
+    display:flex;
+    flex-direction:column;
+    gap:0;
+}
+.flow-step {
+    display:grid;
+    grid-template-columns:64px 1fr;
+    gap:24px;
+    padding:26px 0;
+    border-top:1px solid var(--line);
+}
+.flow-step:last-child {
+    border-bottom:1px solid var(--line);
+}
+.flow-step .step-num {
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    color:var(--paper);
+    background:var(--ink);
+    width:34px; height:34px;
+    border-radius:50%;
+    display:flex; 
+    align-items:center; 
+    justify-content:center;
+}
+.flow-step.active .step-num {
+    background:var(--stamp);
+}
+.flow-step h3 {
+    font-size:17.5px; 
+    margin-bottom:6px;
+}
+.flow-step p{ 
+    margin:0; 
+    font-size:14.5px; 
+    color:var(--ink-soft); 
+    max-width:62ch;
+}
+.flow-step .via-tag {
+    display:inline-block;
+    margin-top:10px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    letter-spacing:.06em;
+    padding:3px 8px;
+    border-radius:2px;
+    text-transform:uppercase;
+}
+.flow-step:nth-child(1) .via-tag { 
+    background:var(--via-white); 
+    border:1px solid var(--line);
+}
+.flow-step:nth-child(2) .via-tag { 
+    background:var(--via-yellow);
+}
+.flow-step:nth-child(3) .via-tag { 
+    background:var(--via-green); 
+    color:var(--via-white);
+}
+.flow-step:nth-child(4) .via-tag { 
+    background:var(--via-pink);
+}
+
+/* ---------- BASE LEGAL / PRAZOS ---------- */
+.legal {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+.legal-card {
+    background:var(--ink);
+    color:var(--paper);
+    padding:26px 24px;
+    border-radius:var(--radius);
+}
+.legal-card .stamp-mini {
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--via-yellow);
+    display:block;
+    margin-bottom:10px;
+}
+.legal-card h3 {
+    color:var(--paper); 
+    font-size:16.5px; 
+    margin-bottom:8px;
+}
+.legal-card p {
+    color:#CFC7B6; 
+    font-size:14px; 
+    margin:0;
+}
+
+/* ---------- BOAS PRÁTICAS ---------- */
+.checklist {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px 32px;
+}
+.check-item {
+    display:flex;
+    gap:14px;
+    padding:14px 0;
+    border-bottom:1px solid var(--line);
+}
+.check-item .mark {
+    font-family:'IBM Plex Mono', monospace;
+    color:var(--stamp);
+    font-weight:600;
+    flex-shrink:0;
+}
+.check-item p {
+    margin:0; 
+    font-size:14.5px; 
+    color:var(--ink-soft);
+}
+.check-item strong {
+    color:var(--ink);
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    border-top:1px solid var(--line);
+    padding:34px 0 44px;
+}
+footer .wrap {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:12px;
+}
+footer p {
+    font-size:13px;
+    color:var(--ink-soft);
+    margin:0;
+}
+footer .mono {
+    font-size:12px; 
+    color:var(--ink-soft);
+}
+
+.cenarios {
+    margin-top:-15px;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.cadastros {
+    display:grid;
+    grid-template-columns:repeat(1,1fr);
+    gap:20px;
+}
+
+.cadastros ul {
+    font-size:14px; 
+    color:var(--ink-soft);
+}
+
+.link-cadastros {
+    text-decoration:underline;
+    color:var(--ink-soft);
+}
+
+.link-cadastros:hover {
+    text-decoration:underline;
+    color:var(--stamp);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:860px) {
+    .hero .wrap{grid-template-columns:1fr; gap:60px;}
+    .hero h1{font-size:38px;}
+    .vias{height:280px; order:-1;}
+    .via-card{width:220px; height:150px;}
+    .definition{grid-template-columns:1fr;}
+    .roles{grid-template-columns:1fr;}
+    .legal{grid-template-columns:1fr;}
+    .checklist{grid-template-columns:1fr;}
+    nav{display:none;}
+}
