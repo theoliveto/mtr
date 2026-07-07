@@ -11,8 +11,8 @@
                     só que para aquilo que sobra.
                 </p>
                 <div class="cta-row">
-                    <a class="btn primary" href="#fluxo">Ver o fluxo completo</a>
-                    <a class="btn ghost" href="#legal">Base legal e prazos</a>
+                    <a class="btn primary" href="/">Ver o fluxo completo</a>
+                    <a class="btn ghost" href="/">Base legal e prazos</a>
                 </div>
             </div>
             <div class="vias" aria-hidden="true">
