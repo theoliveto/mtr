@@ -3,7 +3,7 @@
         <div class="wrap">
             <div class="section-head">
                 <h2>Pontos de atenção</h2>
-                <span class="idx">05 — boas práticas</span>
+                <span class="idx">04 — boas práticas</span>
             </div>
             <div class="checklist">
                 <div class="check-item">
@@ -21,14 +21,6 @@
                 <div class="check-item">
                     <span class="mark">→</span>
                     <p><strong>Confirmação em cada etapa.</strong> Um MTR sem a baixa final do destinador fica "em aberto" e pode aparecer como pendência em auditorias e fiscalizações.</p>
-                </div>
-                <div class="check-item">
-                    <span class="mark">→</span>
-                    <p><strong>Relatório anual.</strong> Muitos estados exigem o envio de um relatório consolidado (ex: RA — Relatório Anual) com base no histórico de MTRs emitidos no período.</p>
-                </div>
-                <div class="check-item">
-                    <span class="mark">→</span>
-                    <p><strong>Verifique o sistema do seu estado.</strong> Nem todo estado usa o mesmo sistema — confirme se sua operação depende do MTR-e nacional, de uma plataforma estadual própria, ou de ambos.</p>
                 </div>
             </div>
         </div>

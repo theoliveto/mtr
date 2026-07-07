@@ -502,7 +502,13 @@ footer .mono {
 }
 
 .cenarios {
-    margin-top:-15px;
+    margin-top:-25px;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.cenarios-2 {
+    margin-top:10px;
     margin-bottom:15px;
     font-size:22px;
 }

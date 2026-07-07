@@ -5,7 +5,6 @@
         <DefinicaoComponent />
         <QuemComponent />
         <FluxoComponent />
-        <LegalComponent />
         <PraticasComponent />
     </main>
     <FooterComponent />
@@ -18,7 +17,6 @@
     import DefinicaoComponent from '@/components/DefinicaoComponent.vue'
     import QuemComponent from '@/components/QuemComponent.vue'
     import FluxoComponent from '@/components/FluxoComponent.vue'
-    import LegalComponent from '@/components/LegalComponent.vue'
     import PraticasComponent from '@/components/PraticasComponent.vue'
 
     import '../assets/styles.css'
@@ -32,7 +30,6 @@
             DefinicaoComponent,
             QuemComponent,
             FluxoComponent,
-            LegalComponent,
             PraticasComponent
         }
     }

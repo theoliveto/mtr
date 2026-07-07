@@ -11,32 +11,92 @@
                     <div class="step-num">1</div>
                     <div>
                         <h3>Emissão</h3>
-                        <p>Criamos a OS</p>
-                        <span class="via-tag">Gerador</span>
+                        <p>
+                            Com a OS criada, cadastros de entidades devidamente configurados e as informações no residuo,
+                            emitimos o MTR ou por resíduos ou agrupado.
+                        </p>
                     </div>
                 </div>
                 <div class="flow-step">
                     <div class="step-num">2</div>
                     <div>
-                        <h3>Coleta e transporte</h3>
-                        <p>O transportador confirma a coleta, registra a quantidade real embarcada e assume a responsabilidade pelo resíduo até a entrega no destino informado.</p>
-                        <span class="via-tag">2ª via · transportador</span>
+                        <h3>Recebimento</h3>
+                        <p>O destinador confirma o recebimento, valida a quantidade e o tipo de resíduo, e registra o tratamento ou disposição final aplicado.</p>
                     </div>
                 </div>
                 <div class="flow-step">
                     <div class="step-num">3</div>
                     <div>
-                        <h3>Recebimento no destino</h3>
+                        <h3>CDF</h3>
+                        <p>Com as três etapas confirmadas, o MTR fica disponível para consulta e fiscalização pelo órgão ambiental competente, encerrando o ciclo de rastreabilidade.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flow">
+                <h3 class="cenarios-2">2° Cenário</h3>
+                <div class="flow-step active">
+                    <div class="step-num">1</div>
+                    <div>
+                        <h3>Emissão (Com destinador Terceiro)</h3>
+                        <p>
+                            Com a OS criada, cadastros de entidades devidamente configurados e as informações no residuo,
+                            emitimos o MTR ou por resíduos ou agrupado.
+                        </p>
+                    </div>
+                </div>
+                <div class="flow-step">
+                    <div class="step-num">2</div>
+                    <div>
+                        <h3>Recebimento</h3>
                         <p>O destinador confirma o recebimento, valida a quantidade e o tipo de resíduo, e registra o tratamento ou disposição final aplicado.</p>
-                        <span class="via-tag">3ª via · destinador</span>
+                    </div>
+                </div>
+                <div class="flow-step">
+                    <div class="step-num">3</div>
+                    <div>
+                        <h3>CDF</h3>
+                        <p>Com as três etapas confirmadas, o MTR fica disponível para consulta e fiscalização pelo órgão ambiental competente, encerrando o ciclo de rastreabilidade.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flow">
+                <h3 class="cenarios-2">3° Cenário</h3>
+                <div class="flow-step active">
+                    <div class="step-num">1</div>
+                    <div>
+                        <h3>Emissão (Com Armazenador Temporário)</h3>
+                        <p>
+                            Com a OS criada, cadastros de entidades devidamente configurados e as informações no residuo,
+                            emitimos o MTR ou por resíduos ou agrupado.
+                        </p>
+                    </div>
+                </div>
+                <div class="flow-step">
+                    <div class="step-num">2</div>
+                    <div>
+                        <h3>Recebimento Temporário</h3>
+                        <p>O destinador confirma o recebimento, valida a quantidade e o tipo de resíduo, e registra o tratamento ou disposição final aplicado.</p>
+                    </div>
+                </div>
+                <div class="flow-step">
+                    <div class="step-num">3</div>
+                    <div>
+                        <h3>MTR Complementar</h3>
+                        <p>Com as três etapas confirmadas, o MTR fica disponível para consulta e fiscalização pelo órgão ambiental competente, encerrando o ciclo de rastreabilidade.</p>
                     </div>
                 </div>
                 <div class="flow-step">
                     <div class="step-num">4</div>
                     <div>
-                        <h3>Validação pelo órgão ambiental</h3>
+                        <h3>Recebimento do Complementar</h3>
                         <p>Com as três etapas confirmadas, o MTR fica disponível para consulta e fiscalização pelo órgão ambiental competente, encerrando o ciclo de rastreabilidade.</p>
-                        <span class="via-tag">4ª via · órgão ambiental</span>
+                    </div>
+                </div>
+                <div class="flow-step">
+                    <div class="step-num">5</div>
+                    <div>
+                        <h3>CDF do Complementar</h3>
+                        <p>Com as três etapas confirmadas, o MTR fica disponível para consulta e fiscalização pelo órgão ambiental competente, encerrando o ciclo de rastreabilidade.</p>
                     </div>
                 </div>
             </div>
