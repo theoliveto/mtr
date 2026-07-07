@@ -7,7 +7,6 @@
             </div>
             <nav>
                 <a href="/cadastros">Cadastros</a>
-                <a href="/suporte">Suporte</a>
                 <a href="/desenvolvimento">Desenvolvimento</a>
             </nav>
         </div>

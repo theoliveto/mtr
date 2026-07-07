@@ -193,6 +193,60 @@
                         </li>
                     </ul>
                 </div>
+                <div class="role-card transportador justify">
+                    <div class="swatch"></div>
+                    <h3>Atualizar ou Cadastrar Dados de Portais MTR</h3>
+                    <p>No Controller é possível fazer consultas nos portais de atributos necessários que os resíduos precisam.</p>
+                    <ul>
+                        <li>
+                            <strong>Sendo eles: </strong> 
+                            <ul class="mt mb" type="square">
+                                <li>Acondicionamentos</li>
+                                <li>Classes</li>
+                                <li>Estados Fisícos</li>
+                                <li>Resíduos</li>
+                                <li>Formas de Tratamento</li>
+                                <li>Unidades</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Na 261 o caminho era: Utilitários > Mais.. > Atualizar Dados da Integração MTR</p>
+                    <p>Na 262 o caminho ficou: Resíduos > Cadastro de Resíduos MTR > Atualizar Dados da Integração MTR</p>
+                    <p class="mt">
+                        Essas consultas ficam salvas em tabelas, e os dados retornados são identificados por estado.
+                        A função só irá buscar nas api dos estados configurados em Utilitários > Configurações > Resíduos - MTR
+                    </p>
+                    <p class="mt"> 
+                        Além disso, é possível criar cadastros no Controller, a partir dessas consultas.
+                    </p>
+                    <p class="mt"> 
+                        Por fim, é possível fazer a consulta da integração, de forma individual, nos cadastros dos atributos pelo botão integrar (com exceção do Resíduos):
+                    </p>
+                    <ul>
+                        <ul class="mt mb" type="square">
+                            <li>
+                                Acondicionamentos: Utilitários > Mais.. > Cadastro de Acondicionamento de MTR -
+                                <a href="https://prnt.sc/4Th-Kk6cdYoJ" target="_blank" class="link-cadastros">Confira</a>
+                            </li>
+                            <li>
+                                Classes: Materiais > Subgrupo
+                                <a href="https://prnt.sc/K9ysdx4wlQzD" target="_blank" class="link-cadastros">Confira</a>
+                            </li>
+                            <li>
+                                Estados Fisícos: Materiais > Estado de Materiais
+                                <a href="https://prnt.sc/eIM8LzvF2icW" target="_blank" class="link-cadastros">Confira</a>
+                            </li>
+                            <li>
+                                Formas de Tratamento: Resíduos > Cadastros Complementares > Forma de Tratamento de Resíduo
+                                <a href="https://prnt.sc/W_YEU9xXiUNJ" target="_blank" class="link-cadastros">Confira</a>
+                            </li>
+                            <li>
+                                Unidades: Materiais > Unidade
+                                <a href="https://prnt.sc/tZ3XAEbkbORQ" target="_blank" class="link-cadastros">Confira</a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
