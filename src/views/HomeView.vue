@@ -6,6 +6,7 @@
         <QuemComponent />
         <FluxoComponent />
         <PraticasComponent />
+        <PortaisComponent />
     </main>
     <FooterComponent />
 </template>
@@ -18,6 +19,7 @@
     import QuemComponent from '@/components/QuemComponent.vue'
     import FluxoComponent from '@/components/FluxoComponent.vue'
     import PraticasComponent from '@/components/PraticasComponent.vue'
+    import PortaisComponent from '@/components/PortaisComponent.vue'
 
     import '../assets/styles.css'
 
@@ -30,7 +32,8 @@
             DefinicaoComponent,
             QuemComponent,
             FluxoComponent,
-            PraticasComponent
+            PraticasComponent,
+            PortaisComponent
         }
     }
 </script>

@@ -6,6 +6,7 @@
                 <span class="name">Manifesto de Transporte de Resíduos</span>
             </div>
             <nav>
+                <a href="/">Inicial</a>
                 <a href="/cadastros">Cadastros</a>
                 <a href="/desenvolvimento">Desenvolvimento</a>
             </nav>

@@ -1,7 +1,6 @@
 <template>
     <HeaderComponent />
     <main>
-        <HeroComponent />
         <CadastrosComponent />
     </main>
     <FooterComponent />
@@ -10,7 +9,6 @@
 <script>
     import HeaderComponent from '../components/HeaderComponent.vue'
     import FooterComponent from '../components/FooterComponent.vue'
-    import HeroComponent from '@/components/HeroComponent.vue'
     import CadastrosComponent from '@/components/CadastrosComponent.vue'
 
     import '../assets/styles.css'
@@ -20,7 +18,6 @@
         components: {
             HeaderComponent,
             FooterComponent,
-            HeroComponent,
             CadastrosComponent
         }
     }
